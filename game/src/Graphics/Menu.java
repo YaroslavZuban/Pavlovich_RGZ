@@ -18,6 +18,7 @@ public class Menu {
         windowPatch.setLocationRelativeTo(null);
 
         play.setPreferredSize(new Dimension(180, 60));
+        play.setBackground(Color.green);
         play.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -27,6 +28,7 @@ public class Menu {
         });
 
         saveCoordinates.setPreferredSize(new Dimension(180, 60));
+        saveCoordinates.setBackground(Color.green);
         saveCoordinates.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -36,6 +38,7 @@ public class Menu {
         });
 
         exit.setPreferredSize(new Dimension(180, 60));
+        exit.setBackground(Color.green);
         exit.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {

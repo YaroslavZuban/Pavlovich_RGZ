@@ -54,6 +54,7 @@ public class ParametersWindow extends JPanel {
     private void download(JComponent jComponent, LightweightRect l) {
         add(textReadingFile);
 
+        readingFile.setBackground(Color.green);
         readingFile.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -79,7 +80,7 @@ public class ParametersWindow extends JPanel {
 
     private void conservationFile() {
         add(testSaveFile);
-
+        saveFile.setBackground(Color.green);
         saveFile.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -95,6 +96,7 @@ public class ParametersWindow extends JPanel {
 
     private void pathBuilding(JComponent jComponent) {
         add(testWay);
+        way.setBackground(Color.green);
         way.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -126,6 +128,7 @@ public class ParametersWindow extends JPanel {
     private void robotSize(JComponent jComponent) {
         add(textRadiusRobot);
         add(radiusRobot);
+        saveRadiusRobot.setBackground(Color.green);
         saveRadiusRobot.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -146,6 +149,8 @@ public class ParametersWindow extends JPanel {
     private void squareSize(JComponent jComponent) {
         add(textSizeSquare);
         add(sizeSquare);
+
+        saveSizeSquare.setBackground(Color.green);
         saveSizeSquare.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -166,6 +171,7 @@ public class ParametersWindow extends JPanel {
 
     private void workingRectangle(JComponent jComponent, LightweightRect l) {
         add(countRectangle);
+        addRectangle.setBackground(Color.green);
         addRectangle.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -177,6 +183,8 @@ public class ParametersWindow extends JPanel {
         });
 
         add(addRectangle);
+
+        removeRectangle.setBackground(Color.green);
         removeRectangle.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
